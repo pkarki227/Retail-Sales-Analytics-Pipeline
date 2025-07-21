@@ -1,0 +1,9 @@
+OrderID,OrderDate,Product,Category,Sales,Quantity,CustomerID,Region
+1001,10/01/2024,iPhone 14,Electronics,1299,1,CUST001,NSW
+1002,11/01/2024,Samsung TV,Electronics,899,1,CUST002,VIC
+1003,12/01/2024,Office Chair,Furniture,199,2,CUST003,QLD
+1004,12/01/2024,MacBook Pro,Electronics,2499,1,CUST004,NSW
+1005,13/01/2024,Dining Table,Furniture,599,1,CUST005,VIC
+1006,14/01/2024,Dell Laptop,Electronics,1099,1,CUST006,QLD
+1007,15/01/2024,Bookshelf,Furniture,149,1,CUST007,SA
+1008,16/01/2024,Sony Headset,Electronics,199,2,CUST008,VIC
