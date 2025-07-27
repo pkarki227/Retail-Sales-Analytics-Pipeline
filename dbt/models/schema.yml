@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: retail_analytics         # This should match your actual database/schema name in Databricks
+    tables:
+      - name: retail_sales_cleaned
+      - name: dim_customers
+        description: Dimension table containing unique customer details.
+        columns:
+         - name: customer_id
+           description: Unique ID for customer.
+         - name: region
+           description: Region the customer belongs to
+      - name: dim_products
+        description: Dimension table for product details.
+        columns:
+        - name: product_name
+          description: Name of the product
+        - name: category
+          description: Category to which the product belongs.
+      - name: fact_sales
+        description: Fact table capturing all sales transactions with derived metrics.
+        columns:
+        - name: order_id
+          description: Unique sales order ID.
+        - name: order_date
+          description: Date of the sale.
+        - name: customer_id
+          description: Foreign key to dim_customers.
+        - name: product_name
+          description: Foreign key to dim_products.
+        - name: unit_price
+          description: Price per unit of the product.
+        - name: quantity
+          description: Number of units sold.
+        - name: total_revenue
+          description: Total revenue recorded in the source.
+        - name: calculated_revenue
+          description: Recomputed total revenue using sales × quantity.
+        - name: avg_unit_price
+          description: Average price per unit sold.
+        - name: order_value_segment
+          description: Order value classification (High/Medium/Low).
+
+   
+
