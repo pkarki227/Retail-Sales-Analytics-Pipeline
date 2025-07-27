@@ -1,0 +1,1 @@
+select * from retailanalytics_dbricks3.retail_analytics.retail_sales_cleaned
